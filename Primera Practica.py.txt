@@ -1,0 +1,17 @@
+import random
+p=[]
+for x in range (100):
+    p.append(x)
+
+def minimo (arr):
+    aux= arr #Se crea un arreglo auxiliar
+    resultado=0
+    for n1 in arr: #Para cada elemento del arreglo o conjunto
+        aux.pop(n1) #Saca el n1 del arreglo-conjunto auxiliar
+        for n2 in aux: #Para cada elemento de n2 del conjunto auxiliar
+                   if(n1>n2): #Compara si n1 es mayor a n2
+                       break #Si lo es salgo para probar el siguiente n1, si no comaparo n1 con el seiguiente n2
+                    resultado=n1
+        resultado=n1
+        break
+    return resultado

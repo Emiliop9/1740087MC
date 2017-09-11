@@ -1,7 +1,10 @@
+#Este si funciona pero al poner cualquier arreglo para trabajarlo truena.
+
+
 def selection(arr):
     for i in range(0,len(arr-1)):
         val=i
-        for j in range(i+1, len (arr)):
+        for j in range(i+1, len(arr)):
             if arr[j]<arr[val]:
                 contador=contador+1
                 val=j

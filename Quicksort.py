@@ -1,6 +1,7 @@
+#Lo modifiqueun poco en el acomodo y una variable equivocada ya que tronaba al usarlo.
+
 import random
 cnt=0
-#no me Corrió el programa
 
 def quicksort(arr):
     global cnt
@@ -13,20 +14,5 @@ def quicksort(arr):
         if e<=p:
             menores.append(e)
         else:
-            mayores.append(a)
+            mayores.append(e)
     return quicksort(menores) + [p] + quicksort(mayores)
-
-def rndar(long):
-    arr=[]
-    for i in range (long):
-        arr.append(random,randint(0,long))
-    return arr
-
-i=10
-
-while i<=10:
-    for replica in range(10):
-        ori=rndar(1)
-        arr=quicksort(ori)
-        print(1,cnt,arr,ori)
-        cnt=0
